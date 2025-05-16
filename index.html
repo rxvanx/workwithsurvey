@@ -1,1 +1,46 @@
-
+<!DOCTYPE html>
+<html lang="eng">
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="codegrid" />
+<title>Work With Surveys</title>
+<link rel="stylesheet" href="css.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.
+js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.
+min.js"></script>
+<body>
+<div class="nav">
+<div class="items-left">
+<a href="#">services</a>
+<a href="#">rooms</a>
+</div>
+<div class="items-right">
+<a href="#">booking</a>
+<a href="#">contact</a>
+</div>
+</div>
+<div class="logo-container">
+<h1 class="logo">Work With Surveys</h1>
+</div>
+<div class="container"></div>
+<div class="content">
+<img src="hero.jpg">
+</div>
+<script>
+ScrollTrigger.create({
+animation: gsap. from(".logo", {
+y: "50vh",
+scale: 6,
+yPercent: -50,
+}),
+scrub: true,
+trigger: ".content",
+start: "top bottom",
+endTrigger: ".content",
+end: "top center",
+});
+</script>
+</body>
+</html>
